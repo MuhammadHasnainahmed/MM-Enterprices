@@ -15,12 +15,11 @@ body {
 
 /* -------------- ------SLider Section-------------------------------------- */
 
- 
 @media (max-width: 550px) {
-   .developer{
-   text-align: center;
-    flex-direction: column ;
-   }
+  .developer {
+    text-align: center;
+    flex-direction: column;
+  }
 }
 /* --------------------card-section------------------------------ */
 
@@ -67,14 +66,16 @@ body {
 #our-journey {
   background-image: url(./img/orange-truck-background.jpg);
   background-size: cover;
-  width: auto;
+  width: 100%;
   height: auto;
 
   margin-bottom: 0;
-  padding: 50px;
+  padding: 50px 0px;
   background-position: center;
 }
-
+.counter-container {
+  width: 25%;
+}
 .title {
   padding-bottom: 30px;
   margin-bottom: 20px;
@@ -112,7 +113,7 @@ body {
   padding-top: 70px;
   align-items: center;
   /* background-color:#fff ; */
-  margin-bottom: 50px
+  margin-bottom: 50px;
 }
 
 .page-contant {
@@ -275,7 +276,7 @@ body {
 /* -----------------------------------------footer */
 #footer {
   list-style: none;
-  background-color: #22639F;
+  background-color: #22639f;
 }
 
 .footer-container {
@@ -285,23 +286,31 @@ body {
 
 /*icon  */
 .facebook {
-  color: blue;
   font-size: 30px;
+  color: white;
 }
 .instagram {
-  color: pink;
+  color: white;
   font-size: 30px;
   margin-left: 20px;
 }
 .linkedin {
-  color: blue;
+  color: white;
   font-size: 30px;
   margin-left: 20px;
 }
 .whatsapp {
-  color: greenyellow;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 10px;
   font-size: 30px;
   margin-left: 20px;
+}
+.whatsapp :hover,
+.facebook :hover,
+.instagram :hover,
+.linkedin :hover {
+  color: #bcc0c4;
 }
 .icon-container {
   display: flex;
@@ -311,7 +320,7 @@ body {
   margin-top: 5px;
 }
 .developer {
-  border-top: 2px solid black;
+  border-top: 2px solid #bcc0c4;
   padding: 10px 5px;
   max-width: 800px;
   margin: 0 auto;
@@ -325,12 +334,40 @@ body {
     width: 13rem;
     height: 30rem;
   }
- 
+}
+@media (max-width: 850px) {
+  .counter-container {
+    width: 100%;
+  }
 }
 
- 
+.footer-logo-container {
+  align-items: center;
+  justify-content: center;
+}
+.quick-Link {
+  margin-top: 0px;
+  text-align: left;
+}
+.a-color {
+  color: #bcc0c4 !important;
+  text-decoration: none;
+}
+.a-color  :hover {
+  color: white !important;
+  text-decoration: none;
+}
 @media (max-width: 766px) {
   #service-edge {
+    text-align: center;
+  }
+  .footer-logo-container {
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  .quick-Link {
+    margin-top: 12px;
     text-align: center;
   }
 
